@@ -1,0 +1,24 @@
+namespace MyMessages;
+
+union EventTypes { Event1, Event2, Event3, EventN } 
+
+table EventHolder {
+   event : EventTypes;
+}
+
+root_type EventHolder;
+
+table Event1 {
+  data:uint8;
+}
+
+table Event2 {
+  data:uint8;}
+
+table Event3 {
+}
+
+table EventN {
+  data:uint8;
+}
+
